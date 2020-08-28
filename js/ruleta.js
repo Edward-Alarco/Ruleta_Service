@@ -14,7 +14,7 @@ $(document).ready(function () {
             var modal = '<div class="modal"><div class="cuadro"><h1>' + number + '</h1></div></div>';
     
             $('.contenedor').after(modal);
-
+            $('.girar').css('animation', 'none');
 
             $('.modal').on('click',function(){
                 $('.modal').remove();

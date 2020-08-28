@@ -73,6 +73,11 @@
 .title img {
   width: 50%;
   cursor: pointer;
+  transform: scale(1, 1);
+  transition: all 0.3s ease;
+}
+.title img:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .redes {
@@ -180,6 +185,12 @@ body {
   text-transform: uppercase;
   border-bottom: 1px solid #fff;
 }
+.contenedor .ruleta-game .formulario input[type=number]::-webkit-outer-spin-button, .contenedor .ruleta-game .formulario input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.contenedor .ruleta-game .formulario input[type=number]::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
 .contenedor .ruleta-game .ruleta {
   position: relative;
 }
@@ -231,10 +242,29 @@ body {
     width: 95%;
   }
 
+  .contenedor .ruleta-game .ruleta .flecha {
+    height: 170px;
+  }
+
+  .contenedor .ruleta-game .ruleta .girar {
+    width: 380px;
+    height: 380px;
+  }
+
   .title {
     top: 80px;
   }
   .title img {
     width: 40%;
+  }
+}
+@media all and (max-width: 415px) {
+  .contenedor .ruleta-game .ruleta .flecha {
+    height: 130px;
+  }
+
+  .contenedor .ruleta-game .ruleta .girar {
+    width: 300px;
+    height: 300px;
   }
 }

@@ -7,8 +7,8 @@ $(document).ready(function(){
 
         $('.contenedor').after(modalInfo);
 
-        $('#close').on('click',function(ele){
-            ele.preventDefault
+        $('#close').on('click',function(ex){
+            ex.preventDefault();
             $('.modal-info').remove();
         })
 
