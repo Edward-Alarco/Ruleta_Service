@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/b72be65822.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Pick a Random Number</title>
+</head>
+
+<body>
+
+    <div class="info">
+        <a href="#" id="btninfo">
+            <i class="fas fa-info"></i>
+        </a>
+    </div>
+
+    <!-- <div class="modal-info">
+        <div class="card">
+            <h4>Info</h4>
+            <p>
+                The web application will only accept numbers, starting from 0 towards the number given by the user.
+                <br>
+                <br>
+                1) Insert the limit number, to give a random number within the range.
+                <br>
+                2) Press the play button.
+                <br>
+                3) Just wait 😉
+                <br>
+                <br>
+            </p>
+            <hr>
+            <a href="#" id="close">Cerrar</a>
+        </div>
+    </div> -->
+
+    <div class="title">
+        <img src="img/title.png" alt="">
+    </div>
+
+    <div class="redes">
+        <a href="https://github.com/Edward-Alarco">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+
+    <div class="contenedor">
+        <div class="ruleta-game">
+            <div class="formulario">
+                <input type="number" name="numero" id="number" placeholder="FROM 0 TO ...">
+                <button id="btn">
+                    <i class="fas fa-play"></i>
+                </button>
+            </div>
+
+            <div class="ruleta">
+                <img src="img/ruleta.png" alt="Ruleta" class="girar">
+                <img src="img/arrow.png" alt="" class="flecha">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="modal">   
+        <div class="cuadro">
+            <h1></h1>
+        </div>
+    </div> -->
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/ruleta.js"></script>
+    <script src="js/modalInfo.js"></script>
+
+</body>
+
+</html>
